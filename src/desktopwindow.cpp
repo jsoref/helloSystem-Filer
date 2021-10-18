@@ -611,7 +611,7 @@ void DesktopWindow::onIndexesMoved(const QModelIndexList& indexes) {
     Q_FOREACH(const QModelIndex& index, indexes) {
         // Under some circumstances, Qt might emit indexMoved for
         // every single cells in the same row. (when QAbstractItemView::SelectItems is set)
-        // So indexes list may contain several indixes for the same row.
+        // So indexes list may contain several indexes for the same row.
         // Since we only care about rows, not individual cells,
         // let's handle column 0 of every row here.
         if(index.column() == 0) {
