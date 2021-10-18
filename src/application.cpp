@@ -830,7 +830,7 @@ void Application::reloadDesktopsAsNeeded() {
   }
 }
 
-// This slot is for Qt 5 onlt, but the stupid Qt moc cannot do conditional compilation
+// This slot is for Qt 5 only, but the stupid Qt moc cannot do conditional compilation
 // so we have to define it for Qt 4 as well.
 void Application::onVirtualGeometryChanged(const QRect& rect) {
   // NOTE: the following is a workaround for Qt bug 32567.
