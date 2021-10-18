@@ -152,7 +152,7 @@ DesktopWindow::DesktopWindow(int screenNum):
 
     /*
      * probono: Commenting these out
-     * for those that are alraedy defined in the Menu solves QAction::event: Ambiguous shortcut overload
+     * for those that are already defined in the Menu solves QAction::event: Ambiguous shortcut overload
 
     shortcut = new QShortcut(QKeySequence(Qt::CTRL + Qt::Key_X), this); // cut
     connect(shortcut, &QShortcut::activated, this, &DesktopWindow::onCutActivated);
@@ -666,7 +666,7 @@ void DesktopWindow::relayoutItems() {
                 // qDebug() << "set custom pos:" << name << row << index << customPos;
                 continue;
             }
-            // check if the current pos is alredy occupied by a custom item
+            // check if the current pos is already occupied by a custom item
             bool used = false;
             for(it = customItemPos_.begin(); it != customItemPos_.end(); ++it) {
                 QPoint customPos = *it;
