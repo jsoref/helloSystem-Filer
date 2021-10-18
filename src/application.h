@@ -130,7 +130,7 @@ private:
   QVector<DesktopWindow*> desktopWindows_;
   QPointer<PreferencesDialog> preferencesDialog_;
   QPointer<DesktopPreferencesDialog> desktopPreferencesDialog_;
-  QPointer<Fm::EditBookmarksDialog> editBookmarksialog_;
+  QPointer<Fm::EditBookmarksDialog> editBookmarksDialog_;
   QTranslator translator;
   QTranslator qtTranslator;
   GVolumeMonitor* volumeMonitor_;

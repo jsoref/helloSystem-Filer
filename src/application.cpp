@@ -80,7 +80,7 @@ Application::Application(int& argc, char** argv):
   volumeMonitor_(NULL),
   userDirsWatcher_(NULL),
   lxqtRunning_(false),
-  editBookmarksialog_() {
+  editBookmarksDialog_() {
 
   argc_ = argc;
   argv_ = argv;
@@ -701,12 +701,12 @@ void Application::updateDesktopsFromSettings() {
 }
 
 void Application::editBookmarks() {
-  if(!editBookmarksialog_) {
+  if(!editBookmarksDialog_) {
     FmBookmarks* bookmarks = fm_bookmarks_dup();
-    editBookmarksialog_ = new Fm::EditBookmarksDialog(bookmarks);
+    editBookmarksDialog_ = new Fm::EditBookmarksDialog(bookmarks);
     g_object_unref(bookmarks);
   }
-  editBookmarksialog_.data()->show();
+  editBookmarksDialog_.data()->show();
 }
 
 void Application::initVolumeManager() {
