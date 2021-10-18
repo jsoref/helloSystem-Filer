@@ -780,7 +780,7 @@ void MainWindow::onTabBarCloseRequested(int index) {
 
 void MainWindow::onTabBarTabMoved(int from, int to) {
   // a tab in the tab bar is moved by the user, so we have to move the
-  //  corredponding tab page in the stacked widget to the new position, too.
+  //  corresponding tab page in the stacked widget to the new position, too.
   QWidget* page = ui.stackedWidget->widget(from);
   if(page) {
 	// we're not going to delete the tab page, so here we block signals
