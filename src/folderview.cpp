@@ -256,7 +256,7 @@ void FolderViewTreeView::layoutColumns() {
     }
 
     int filenameColumn = headerView->visualIndex(FolderModel::ColumnFileName);
-    // if the total witdh we want exceeds the available space
+    // if the total width we want exceeds the available space
     if(desiredWidth > availWidth) {
       // Compute the width available for the filename column
       int filenameAvailWidth = availWidth - desiredWidth + widths[filenameColumn];
