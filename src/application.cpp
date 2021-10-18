@@ -785,7 +785,7 @@ void Application::onScreenDestroyed(QObject* screenObj) {
   // #40681: Regression bug: QWidget::winId() returns old value and QEvent::WinIdChange event is not emitted sometimes. (multihead setup)
   // #40791: Regression: QPlatformWindow, QWindow, and QWidget::winId() are out of sync.
   // Explanations for the workaround:
-  // Internally, Qt mantains a list of QScreens and update it when XRandR configuration changes.
+  // Internally, Qt maintains a list of QScreens and update it when XRandR configuration changes.
   // When the user turn off an monitor with xrandr --output <xxx> --off, this will destroy the QScreen
   // object which represent the output. If the QScreen being destroyed contains our panel widget,
   // Qt will call QWindow::setScreen(0) on the internal windowHandle() of our panel widget to move it
