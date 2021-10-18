@@ -99,7 +99,7 @@ QModelIndex FolderViewListView::indexAt(const QPoint& point) const {
 
 // NOTE:
 // QListView has a problem which I consider a bug or a design flaw.
-// When you set movement property to Static, theoratically the icons
+// When you set movement property to Static, theoretically the icons
 // should not be movable. However, if you turned on icon mode,
 // the icons becomes freely movable despite the value of movement is Static.
 // To overcome this bug, we override all drag handling methods, and
