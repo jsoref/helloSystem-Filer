@@ -637,7 +637,7 @@ void Application::onScreenCountChanged(int newCount) {
   bool isVirtual = desktopWidget->isVirtualDesktop();
 
   if(oldVirtual && isVirtual) {
-    // if we are using virtual desktop mode previously, and the new mode is sitll virtual
+    // if we are using virtual desktop mode previously, and the new mode is still virtual
     // no further change is needed, only do relayout.
     desktopWindows_.at(0)->queueRelayout();
     return;
