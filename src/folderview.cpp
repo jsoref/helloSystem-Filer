@@ -79,7 +79,7 @@ QModelIndex FolderViewListView::indexAt(const QPoint& point) const {
     // Q_ASSERT(delegate != NULL);
     // We use the grid size - (2, 2) as the size of the bounding rectangle of the whole item.
     // The width of the text label hence is gridSize.width - 2, and the width and height of the icon is from iconSize().
-    QRect visRect = visualRect(index); // visibal area on the screen
+    QRect visRect = visualRect(index); // visible area on the screen
     QSize itemSize = gridSize();
     itemSize.setWidth(itemSize.width() - 2);
     itemSize.setHeight(itemSize.height() - 2);
