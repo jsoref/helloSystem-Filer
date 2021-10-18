@@ -394,7 +394,7 @@ void Application::onSaveStateRequest(QSessionManager& manager) {
 }
 
 void Application::desktopManager(bool enabled) {
-  // TODO: turn on or turn off desktpo management (desktop icons & wallpaper)
+  // TODO: turn on or turn off desktop management (desktop icons & wallpaper)
   qDebug("desktopManager: %d", enabled);
   QDesktopWidget* desktopWidget = desktop();
   if(enabled) {

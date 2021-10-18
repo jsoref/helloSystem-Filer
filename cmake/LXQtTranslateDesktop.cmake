@@ -13,7 +13,7 @@
 #
 #     Input:
 #
-#       SOURCES List of input desktop files (.destktop.in) to be translated
+#       SOURCES List of input desktop files (.desktop.in) to be translated
 #               (merged), relative to the CMakeList.txt.
 #
 #       TRANSLATION_DIR Optional path to the directory with the .ts files,
