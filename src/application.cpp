@@ -322,7 +322,7 @@ void Application::init() {
   qtTranslator.load("qt_" + QLocale::system().name(), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
   installTranslator(&qtTranslator);
 
-  // install our own tranlations
+  // install our own translation
   translator.load("filer-qt_" + QLocale::system().name(), PCMANFM_DATA_DIR "/translations");
   // qDebug("probono: Use relative path from main executable so that this works when it is not installed system-wide, too:");
   // qDebug((QCoreApplication::applicationDirPath() + QString("/../share/filer/translations/")).toUtf8()); // probono
