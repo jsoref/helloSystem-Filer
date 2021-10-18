@@ -783,7 +783,7 @@ void FolderView::selectAll() {
   else {
     // NOTE: By default QListView::selectAll() selects all columns in the model.
     // However, QListView only show the first column. Normal selection by mouse
-    // can only select the first column of every row. I consider this discripancy yet
+    // can only select the first column of every row. I consider this discrepancy yet
     // another design flaw of Qt. To make them consistent, we do it ourselves by only
     // selecting the first column of every row and do not select all columns as Qt does.
     // This will trigger one selectionChanged event per row, which is very inefficient,
