@@ -251,7 +251,7 @@ bool Application::parseCommandLineArgs() {
       desktopManager(false);
 
     if(parser.isSet(desktopPrefOption)) { // desktop preference dialog
-      desktopPrefrences();
+      desktopPreferences();
       keepRunning = true;
     }
     else if(parser.isSet(findFilesOption)) { // file searching utility
@@ -292,7 +292,7 @@ bool Application::parseCommandLineArgs() {
       iface.call("desktopManager", false);
 
     if(parser.isSet(desktopPrefOption)) { // desktop preference dialog
-      iface.call("desktopPrefrences", parser.value(desktopPrefOption));
+      iface.call("desktopPreferences", parser.value(desktopPrefOption));
     }
     else if(parser.isSet(findFilesOption)) { // file searching utility
       iface.call("findFiles", parser.positionalArguments());
@@ -446,7 +446,7 @@ void Application::desktopManager(bool enabled) {
   enableDesktopManager_ = enabled;
 }
 
-void Application::desktopPrefrences() {
+void Application::desktopPreferences() {
   // show desktop preference window
   if(!desktopPreferencesDialog_) {
     desktopPreferencesDialog_ = new DesktopPreferencesDialog();

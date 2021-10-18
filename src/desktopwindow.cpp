@@ -462,7 +462,7 @@ void DesktopWindow::prepareFolderMenu(Fm::FolderMenu* menu) {
 }
 
 void DesktopWindow::onDesktopPreferences() {
-    static_cast<Application* >(qApp)->desktopPrefrences();
+    static_cast<Application* >(qApp)->desktopPreferences();
 }
 
 void DesktopWindow::onFilerPreferences()
