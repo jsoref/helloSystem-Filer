@@ -889,7 +889,7 @@ bool FolderView::eventFilter(QObject* watched, QEvent* event) {
       // This is to fix #85: Scrolling doesn't work in compact view
       // Actually, I think it's the bug of Qt, not ours.
       // When in compact mode, only the horizontal scroll bar is used and the vertical one is hidden.
-      // So, when a user scroll his mouse wheel, it's reasonable to scroll the horizontal scollbar.
+      // So, when a user scroll his mouse wheel, it's reasonable to scroll the horizontal scrollbar.
       // Qt does not implement such a simple feature, unfortunately.
       // We do it by forwarding the scroll event in the viewport to the horizontal scrollbar.
       // FIXME: if someday Qt supports this, we have to disable the workaround.
