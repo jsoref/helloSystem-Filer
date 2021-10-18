@@ -1032,7 +1032,7 @@ void MainWindow::onTabPageStatusChanged(int type, QString statusText) {
     switch(type) {
     case TabPage::StatusTextNormal:
     case TabPage::StatusTextSelectedFiles: {
-      // FIXME: updating the status text so frequently is a little bit ineffiecient
+      // FIXME: updating the status text so frequently is a little bit inefficient
       QString text = statusText = tabPage->statusText(TabPage::StatusTextSelectedFiles);
       if(text.isEmpty()) {
         ui.statusbar->showMessage(tabPage->statusText(TabPage::StatusTextNormal));
