@@ -340,7 +340,7 @@ int Application::exec() {
 
   volumeMonitor_ = g_volume_monitor_get();
   // delay the volume manager a little because in newer versions of glib/gio there's a problem.
-  // when the first volume monitor object is created, it discovers volumes asynchonously.
+  // when the first volume monitor object is created, it discovers volumes asynchronously.
   // g_volume_monitor_get() immediately returns while the monitor is still discovering devices.
   // So initially g_volume_monitor_get_volumes() returns nothing, but shortly after that
   // we get volume-added signals for all of the volumes. This is not what we want.
