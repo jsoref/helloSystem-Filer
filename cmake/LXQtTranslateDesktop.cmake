@@ -34,7 +34,7 @@ function(lxqt_translate_desktop _RESULT)
     if (NOT ${_UNPARSED_ARGS} STREQUAL "")
         MESSAGE(FATAL_ERROR
           "Unknown arguments '${_UNPARSED_ARGS}'.\n"
-          "See lxqt_translate_desktop() documenation for more information.\n"
+          "See lxqt_translate_desktop() documentation for more information.\n"
         )
     endif()
 
