@@ -4,7 +4,7 @@
 #
 # Original Author: Alexander Sokolov <sokoloff.a@gmail.com>
 #
-# funtion lxqt_translate_desktop(_RESULT
+# function lxqt_translate_desktop(_RESULT
 #                           SOURCES <sources>
 #                           [TRANSLATION_DIR] translation_directory
 #                    )
