@@ -231,7 +231,7 @@ void FolderViewTreeView::dropEvent(QDropEvent* e) {
 
 // the default list mode of QListView handles column widths
 // very badly (worse than gtk+) and it's not very flexible.
-// so, let's handle column widths outselves.
+// so, let's handle column widths ourselves.
 void FolderViewTreeView::layoutColumns() {
   // qDebug("layoutColumns");
   if(!model())
